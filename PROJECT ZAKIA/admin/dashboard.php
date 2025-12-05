@@ -52,7 +52,7 @@ $recent_payments = $recent_stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </nav>
 
-   <div class="container mt-4">
+  <div class="container mt-4">
     <div class="row">
         <div class="col-md-6 mb-4">
             <div class="card card-total-siswa text-white">
