@@ -1,0 +1,66 @@
+/* SPP System CSS - Simplified */
+:root {
+    --primary: #007bff;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+.table {
+    background: white;
+}
+
+.sidebar {
+    background: var(--primary);
+    min-height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.stats-card {
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-area:hover {
+    border-color: var(--primary);
+}
+
+.status-pending { background: var(--warning); color: #000; }
+.status-verified { background: var(--success); color: white; }
+.status-rejected { background: var(--danger); color: white; }

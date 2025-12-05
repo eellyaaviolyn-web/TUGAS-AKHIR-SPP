@@ -1,0 +1,160 @@
+/* Admin CSS - Simplified */
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+aside {
+  position: fixed;
+  background: #007bff;
+  width: 200px;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+aside .nav-link {
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+
+aside .nav-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+aside .nav-link.active {
+  background: white;
+  color: #007bff;
+  border-radius: 5px 0 0 5px;
+}
+
+main {
+  left: 200px;
+  position: absolute;
+  transition: 0.2s;
+}
+
+main nav {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 200px);
+  background: white;
+}
+
+main #cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+main #cards .card {
+  background: #007bff;
+  color: white;
+  border: none;
+  height: 100px;
+}
+
+.sidebar-hide {
+  transform: translateX(-200px);
+}
+
+table {
+  margin: 10px 0;
+  color: #007bff;
+}
+
+table tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+table thead {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary {
+  background: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-danger {
+  background: #dc3545;
+  border: none;
+}
+
+.btn-success {
+  background: #28a745;
+  border: none;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  border: none;
+}
+
+.form-control {
+  background: #f8f9fa;
+  border: 1px solid #007bff;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+}
+
+.selected {
+  background: #007bff;
+  color: white;
+}
+
+.nav-primary {
+  background: #007bff;
+}
+
+.payment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.payment-cards .card-header {
+  background: #007bff;
+  color: white;
+}
+
+.card-total-siswa {
+    background-color: hsl(219, 100%, 50%); 
+}
+.card-pending-payments {
+    background-color: #328e47; 
+}
+
+
+/* CSS untuk semua tombol di Menu Utama */
+.card-body .btn {
+    background: linear-gradient(135deg, #3498db, #2980b9) !important;
+    border: none !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.card-body .btn:hover {
+    background: linear-gradient(135deg, #2980b9, #1f639b) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Atau jika ingin warna berbeda per baris */
+.card-body .col-6:nth-child(odd) .btn {
+    background: linear-gradient(135deg, #3227ca, #2980b9) !important;
+}
+
+.card-body .col-6:nth-child(even) .btn {
+    background: linear-gradient(135deg, #2ecc71, #074922) !important;
+}
